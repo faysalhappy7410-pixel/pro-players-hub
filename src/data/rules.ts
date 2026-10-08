@@ -1,0 +1,2 @@
+// Replace this placeholder with the official rules before launch.
+export const rules = [{ title: 'Official rules coming soon', description: 'Gameplay and community rules have not been announced. Check back before joining.', status: 'To be announced' }];

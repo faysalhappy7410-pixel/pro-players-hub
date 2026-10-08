@@ -1,0 +1,1 @@
+export const events = [{ title: 'The first adventure', description: 'Launch events and community activities will be announced here.', status: 'Date to be announced' }];

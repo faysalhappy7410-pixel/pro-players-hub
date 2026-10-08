@@ -1,0 +1,1 @@
+export const story = { eyebrow: 'OUR STORY', title: 'A world built around you.', description: 'PRO PLAYERS is a Minecraft community in the making. Our full story will be shared here when the server launches.' };

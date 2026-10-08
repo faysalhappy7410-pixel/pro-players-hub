@@ -1,0 +1,1 @@
+export const gameModes = [{ title: 'Your next world', description: 'Official game modes and gameplay details will be announced before launch.', status: 'To be announced' }];

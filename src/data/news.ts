@@ -1,0 +1,1 @@
+export const news = [{ title: 'A new chapter is on the horizon', description: 'PRO PLAYERS is getting ready. Keep an eye on this space for official launch details.', status: 'Launch details coming soon' }];

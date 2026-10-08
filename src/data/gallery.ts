@@ -1,0 +1,2 @@
+// Use original or permission-cleared local images only.
+export const gallery = { description: 'A place for your builds and adventures.', empty: 'Community screenshots coming soon.', images: [] as { src: string; alt: string; caption: string }[] };
