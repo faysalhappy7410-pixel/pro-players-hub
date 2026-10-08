@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { Check, Copy, Server } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { site } from '@/data/site';
+import { siteSettings as site } from '@/data/siteSettings';
 
 export function ServerAddress() {
   const [message, setMessage] = useState('');
   async function copyAddress() {
-    try { await navigator.clipboard.writeText(site.server.address); setMessage('Copied!'); }
-    catch { setMessage('Copy unavailable. Select the address to copy.'); }
+    try { await navigator.clipboard.writeText(site.server.address); setMessage(site.labels.copied); }
+    catch { setMessage(site.labels.copyError); }
   }
-  return <div className="server-address"><Server size={18}/><div><small>SERVER IP <span>· PLACEHOLDER</span></small><code>{site.server.address}</code></div><Button variant="ghost" size="icon" aria-label="Copy server address" title="Copy server address" onClick={copyAddress}>{message === 'Copied!' ? <Check/> : <Copy/>}</Button><span className="copy-message" role="status">{message}</span></div>;
+  return <div className="server-address"><Server size={18}/><div><small>{site.labels.serverIp} {site.server.placeholder && <span>{site.labels.placeholder}</span>}</small><code>{site.server.address}</code></div><Button variant="ghost" size="icon" aria-label={site.labels.copy} title={site.labels.copy} onClick={copyAddress}>{message === site.labels.copied ? <Check/> : <Copy/>}</Button><span className="copy-message" role="status">{message}</span></div>;
 }
