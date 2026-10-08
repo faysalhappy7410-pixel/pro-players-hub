@@ -4,7 +4,7 @@ A static Minecraft community website made with React, Vite, TypeScript, and Tail
 
 ## Editable content
 
-Edit `src/data/site.ts` for brand text, connection details, feature lists, and social links. Page titles and descriptions live in `src/data/metadata.ts` and the four route declarations. The server address is an explicit placeholder. Empty social URLs display “Coming soon” rather than linking to nonexistent destinations. Replace these with real values before announcing your server.
+All editable copy lives under `src/data/`: `siteSettings.ts` (navigation, brand, buttons, connection details, page headings, SEO), `story.ts`, `rules.ts`, `faq.ts`, `features.ts`, `gameModes.ts`, `leaderboard.ts`, `staff.ts`, `gallery.ts`, `events.ts`, `news.ts`, `testimonials.ts`, and `socialLinks.ts`. Edit these files in GitHub or VS Code, then rebuild. Empty social URLs display “Coming soon”; empty rankings, reviews, and images show honest placeholders rather than invented players or endorsements. Add original or permission-cleared local gallery images, with descriptive alt text. The background is an original generated voxel landscape, not a Minecraft screenshot or extracted game asset.
 
 ## Local development
 

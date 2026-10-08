@@ -1,0 +1,1 @@
+export const staff = [{ title: 'Team announcements coming soon', description: 'Official staff names and roles will be introduced here.', status: 'To be announced' }];

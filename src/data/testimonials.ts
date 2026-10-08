@@ -1,0 +1,2 @@
+// No invented reviews: replace the empty state with real, approved player quotes.
+export const testimonials = { empty: 'Real player stories will appear here after launch.', entries: [] as { name: string; quote: string }[] };

@@ -1,0 +1,2 @@
+// Add real player names and scores here after launch. No live API is used.
+export const leaderboard = { description: 'Player rankings will be shared after launch.', empty: 'No rankings yet.', entries: [] as { name: string; score: number }[] };
