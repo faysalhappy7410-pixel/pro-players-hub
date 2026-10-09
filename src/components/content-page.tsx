@@ -2,10 +2,7 @@ import { ArrowUpRight, Blocks, CalendarDays, Camera, MessageCircle, Video } from
 import { Button } from '@/components/ui/button';
 import { Link } from '@tanstack/react-router';
 import { siteSettings as site } from '@/data/siteSettings';
-import { story } from '@/data/story';
-import { rules } from '@/data/rules';
-import { faq } from '@/data/faq';
-import { gameModes } from '@/data/gameModes';
+import { InformationSections } from './information-sections';
 import { leaderboard } from '@/data/leaderboard';
 import { staff } from '@/data/staff';
 import { gallery } from '@/data/gallery';
@@ -19,10 +16,7 @@ import { ContentList, DataSection } from './data-section';
 export function InformationPage() {
   return <div className="content-page container"><PageHeading page="information"/>
     <div className="information-grid">{site.information.details.map(item => <article className="info-item" key={item.title}><small>{item.title}</small><h2>{site.server[item.field]}</h2><p>{item.note}</p></article>)}</div>
-    <DataSection title={story.title}><span className="eyebrow">{story.eyebrow}</span><p>{story.description}</p></DataSection>
-    <DataSection title={site.labels.gameModes}><ContentList items={gameModes}/></DataSection>
-    <DataSection title={site.labels.rules}><ContentList items={rules}/></DataSection>
-    <DataSection title={site.labels.faq}><div className="faq-list">{faq.map(item => <details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div></DataSection>
+    <InformationSections/>
     <section className="connection-section"><div><span className="eyebrow">{site.information.eyebrow}</span><h2>{site.information.title}</h2><p>{site.information.description}</p></div><ServerAddress/></section>
   </div>;
 }
