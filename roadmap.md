@@ -1,4 +1,5 @@
 # PRO PLAYERS
+- [ ] Build and verify Information timeline, grouped rules, six joining steps, FAQ, detailed features, and game modes without changing Home.
 - [x] Move all visible page copy and metadata into the requested local data files.
 - [x] Apply exact colors, consistent background, and accessible mobile layouts.
 - [x] Verify four pages and local-content interactions.
