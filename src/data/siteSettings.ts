@@ -15,6 +15,10 @@ export const siteSettings = {
     rules: 'Server rules', faq: 'Frequently asked questions', gameModes: 'Game modes', leaderboard: 'Leaderboard', staff: 'Meet the team', gallery: 'Community gallery', events: 'Upcoming events', news: 'Latest news', testimonials: 'Player stories',
   },
   home: {
+    logo: { url: '', alt: 'PRO PLAYERS server logo', placeholder: 'SERVER LOGO · PLACEHOLDER' },
+    server: { status: 'Offline', players: '— / —', version: 'To be announced', javaPort: '25565', bedrockAddress: 'bedrock.example.com', bedrockPort: '19132' },
+    labels: { status: 'Server status', players: 'Players online', version: 'Minecraft version', java: 'Java connection', bedrock: 'Bedrock connection', javaIp: 'Java IP', javaPort: 'Java Port', bedrockIp: 'Bedrock IP', bedrockPort: 'Bedrock Port', copy: 'Copy Server IP', discord: 'Join Discord', discordPending: 'Discord invite coming soon.', placeholder: 'Placeholder', information: 'Information', community: 'Community' },
+    hostingNote: 'Free hosting: the server may sometimes be offline.',
     badge: 'A NEW WORLD. YOUR NEXT CHAPTER.', trust: ['Player-first community', 'Endless possibilities'], caption: 'YOUR WORLD IS WAITING',
     featureEyebrow: 'NOT JUST BLOCKS. POSSIBILITIES.', featureTitle: 'A place to play. A place to belong.', featureDetail: 'One community. Countless adventures.',
     communityEyebrow: 'THE BEST PART? THE PEOPLE.', communityTitle: 'Good games. Great company.', communityDescription: 'Come for the Minecraft. Stay for the friendships.', bottomNote: 'Adventure is better together.',
